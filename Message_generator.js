@@ -10,24 +10,6 @@ function generateRandomNumber(num) {
 
     let messageWisdom = []
 
-    for (let name in characters){
-        let optionIdx = generateRandomNumber(characters[name].length)
-
-
-        switch(name) {
-            case "anime":
-                messageWisdom.push(`Anime name generated is: "${characters[name][optionIdx]}".`)
-                break
-            case "starWars":
-                messageWisdom.push(`Star wars name generated is: "${characters[name][optionIdx]}".`)
-                break
-            case "halo":
-                messageWisdom.push(`Halo name generated is: "${characters[name][optionIdx]}".`)
-                break
-            default:
-                messageWisdom.push(`not enough infomation present to formulate a response.`)
-        }
-    }
 
     function formatWisdom(wisdom){
         const formatted = messageWisdom.join('\n')
